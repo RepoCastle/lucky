@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">微信红包</string>
+  <string name="service_name">前往开启插件</string>
+  <string name="github_url">https://github.com/huajianmao/lucky</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent" tools:context=".MainActivity">
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="68dp"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:id="@+id/textView"
+      android:background="#e53935"
+      android:text="微信红包"
+      android:textColor="#fff"
+      android:gravity="center_vertical|center_horizontal"
+      android:paddingBottom="12dp"
+      android:elevation="8dp"/>
+
+  <ImageView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/imageView"
+      android:src="@mipmap/github"
+      android:scaleType="centerInside"
+      android:layout_above="@+id/textView3"
+      android:layout_centerHorizontal="true"
+      android:onClick="openGithub"
+      android:clickable="true"/>
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+      android:text="dev - 开发版"
+      android:id="@+id/textView3"
+      android:layout_centerVertical="true"
+      android:gravity="center"
+      android:onClick="openGithub"
+      android:clickable="true"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:text="去Github关注项目进展"
+      android:id="@+id/textView2"
+      android:layout_below="@+id/textView3"
+      android:layout_centerHorizontal="true"
+      android:clickable="true"
+      android:onClick="openGithub"
+      android:layout_marginTop="3dp"/>
+  <TextView
+      android:id="@+id/github"
+      android:text="https://github.com/huajianmao/lucky"
+      android:textColor="#2196f3"
+      android:clickable="true"
+      android:onClick="openGithub"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:gravity="center_horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentStart="false"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="15dp"
+  />
+  <Button
+      android:id="@+id/button_accessible"
+      android:text="@string/service_name"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:onClick="onButtonClicked"
+      android:layout_alignParentBottom="false"
+      android:background="#fdfdfd"
+      android:textColor="#ff666666" style="?android:attr/borderlessButtonStyle"
+      android:layout_marginRight="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_above="@+id/github"
+  />
+</RelativeLayout>
+
